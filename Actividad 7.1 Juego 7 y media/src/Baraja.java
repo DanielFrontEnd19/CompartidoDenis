@@ -1,15 +1,20 @@
 
+/**
+ * @author denis.bogomilov
+ *Esta es una clase con la que crearemos la baraja española de 40 cartas.
+ *La baraja se creará desordenada.
+ */
 public class Baraja {
 
 	private Carta [] cartas = new Carta[40];
 	private Valor valores [] = Valor.values();
 	private Palo palos [] = Palo.values();
-	private int sigCarta = 0; //se guarda la posici�n de la siguiente carta a repartir
+	private int sigCarta = 0; //se guarda la posici�n de la siguiente carta a repartir
 	
 	
 	
 	/**
-	 * Metodo constructor sin parametros
+	 * Metodo constructor de baraja sin parametros
 	 */
 	public Baraja () {
 
@@ -30,14 +35,30 @@ public class Baraja {
 	
 	
 	
+	/**
+	 * Metodo el cual devuelve un array con todas las cartas de la baraja.
+	 * @return
+	 */
 	public Carta [] getCartas () {
 		return this.cartas;
 	}
 	
+	/**
+	 * Metodo el cual devuelve la posición en la cual se encuentra
+	 * la carta siguiente que tiene que ser repartida.
+	 * @return
+	 */
 	public int getSigCarta() {
 		return this.sigCarta;
 	}
 	
+	
+	/**
+	 * Metodo el cual se utiliza para repartir una carta y cambia 
+	 * el valor de la siguiente carta que se tiene que repartir.
+	 * @param carta
+	 * @return
+	 */
 	public Carta getCarta(int carta) {
 		this.sigCarta = this.sigCarta +1;
 		return this.cartas[carta];
