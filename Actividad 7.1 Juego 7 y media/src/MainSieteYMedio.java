@@ -6,7 +6,7 @@ import java.util.Scanner;
  * 
  */
 /*
- * Prueba
+ * Se actualiza el comentario desde github para descargar los cambios a eclipse.
  */
 public class MainSieteYMedio {
 
@@ -87,7 +87,7 @@ public class MainSieteYMedio {
 			
 			System.out.println("Turno del jugador " + turnos);
 			
-			//Enseñamos la carta del jugador en concreto
+			//EnseÃ±amos la carta del jugador en concreto
 			for (i = 0; jugadores[turnos].getCartas()[i] != null; i++) {
 				
 				if (jugadores[turnos].getCartas() != null) {
@@ -99,7 +99,7 @@ public class MainSieteYMedio {
 			
 			/*
 			 * Entramos en el bucle que hace pedir al jugador las cartas
-			 * Si el jugador responde con ¨no¨ o bien se pasa de los 7,5 puntos, termina su turno
+			 * Si el jugador responde con Â¨noÂ¨ o bien se pasa de los 7,5 puntos, termina su turno
 			 */
 			otraCarta = "si";
 			j = 1;
@@ -149,7 +149,7 @@ public class MainSieteYMedio {
 		
 		
 		/*
-		 * Comprobamos si queda algun jugador que no esté eliminado
+		 * Comprobamos si queda algun jugador que no estÃ© eliminado
 		 */
 		for (i = 1; i < nJugadores; i++) {
 			if (jugadores[i].getEstado()) {
@@ -176,7 +176,7 @@ public class MainSieteYMedio {
 			}
 			
 			/*
-			 * A partir de aqui se decide si la banca cogerá otra carta o no.
+			 * A partir de aqui se decide si la banca cogerÃ¡ otra carta o no.
 			 */
 			while (probabilidadB  < (cartasRestantes *0.5) && jugadores[0].getEstado()) {
 				jugadores[0].cogeCarta();
@@ -239,8 +239,8 @@ public class MainSieteYMedio {
 			}
 			
 			/*
-			 * Despues se recorre la lista de jugadores y los jugadores activos que tengan la puntuación maxima obtenida anteriormente
-			 * se enseñan como ganadores
+			 * Despues se recorre la lista de jugadores y los jugadores activos que tengan la puntuaciÃ³n maxima obtenida anteriormente
+			 * se enseÃ±an como ganadores
 			 */
 			System.out.println("La maxima puntuacion es de " + puntosGanador + " puntos. Los ganadores son: ");
 			
