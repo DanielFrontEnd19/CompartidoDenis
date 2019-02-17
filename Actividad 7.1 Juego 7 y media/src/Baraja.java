@@ -9,7 +9,7 @@ public class Baraja {
 	private Carta [] cartas = new Carta[40];
 	private Valor valores [] = Valor.values();
 	private Palo palos [] = Palo.values();
-	private int sigCarta = 0; //se guarda la posici�n de la siguiente carta a repartir
+	private int sigCarta = 0; //se guarda la posición de la siguiente carta a repartir
 	
 	
 	
@@ -37,7 +37,7 @@ public class Baraja {
 	
 	/**
 	 * Metodo el cual devuelve un array con todas las cartas de la baraja.
-	 * @return
+	 * @return .- Array de objetos carta
 	 */
 	public Carta [] getCartas () {
 		return this.cartas;
@@ -46,7 +46,7 @@ public class Baraja {
 	/**
 	 * Metodo el cual devuelve la posición en la cual se encuentra
 	 * la carta siguiente que tiene que ser repartida.
-	 * @return
+	 * @return .- Número entero.
 	 */
 	public int getSigCarta() {
 		return this.sigCarta;
@@ -56,8 +56,8 @@ public class Baraja {
 	/**
 	 * Metodo el cual se utiliza para repartir una carta y cambia 
 	 * el valor de la siguiente carta que se tiene que repartir.
-	 * @param carta
-	 * @return
+	 * @param carta .- Recoge un número entero con la posición de la carta en la baraja
+	 * @return .- Devuelve un objeto Carta.
 	 */
 	public Carta getCarta(int carta) {
 		this.sigCarta = this.sigCarta +1;

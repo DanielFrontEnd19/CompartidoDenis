@@ -1,14 +1,14 @@
 
 /**
  * @author Makarov
- *Esta es una clase con la que crearemos las cartas de la baraja espaÒola a partir de la informaciÛn que tenemos en los
- *enumerados ®palo® y ®valor®
+ *Esta es una clase con la que crearemos las cartas de la baraja espa√±ola a partir de la informaci√≥n que tenemos en los
+ *enumerados palo y valor
  */
 public class Carta {
 
 	private Valor valor;
 	private Palo palo;
-	private boolean estado; //variable que almacena si una carta se ha utilizado o no
+	private boolean estado; //Variable que almacena si una carta se ha utilizado o no.
 	
 	public Carta () {
 		
@@ -16,8 +16,8 @@ public class Carta {
 	
 	/**
 	 * Metodo constructor con parametros
-	 * @param valor
-	 * @param palo
+	 * @param valor .- Objeto de la calse Valor
+	 * @param palo .- Objeto de la clase Palo
 	 */
 	public Carta (Valor valor, Palo palo) {
 		this.valor = valor;
@@ -32,14 +32,14 @@ public class Carta {
 		return carta;
 	}
 	
-	/*
-	 * Metodos get y set de los parametros de la clase.
+	/**
+	 * Metodos get y set necesarios de los parametros de la clase.
 	 */
 	public boolean getEstado() {
 		return this.estado;
 	}
 	
-	//se modificar· solo el estado de la carta.
+	//se modificar√° solo el estado de la carta.
 	public void setEstado() {
 		this.estado = false;
 	}
@@ -56,8 +56,8 @@ public class Carta {
 	
 	/**
 	 * Metodo para comparar dos cartas, se utiliza a la hora de crear la baraja.
-	 * @param otraCarta
-	 * @return
+	 * @param otraCarta .- Objeto de la clase Carta
+	 * @return .- Valor booleano que indica true si son iguales o de lo contrario, false.
 	 */
 	public boolean compareTo (Carta otraCarta) {
 		boolean sw = false;

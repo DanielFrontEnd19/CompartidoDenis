@@ -2,11 +2,8 @@ import java.util.Scanner;
 
 /**
  * @author Makarov
- * Clase principal del juego 7 y medio. En esta clase se crearan unicamente los objetos de la clase jugador.
+ * Clase principal del juego 7 y medio. En esta clase se crearan unicamente objetos de la clase jugador.
  * 
- */
-/*
- * Se actualiza el comentario desde github para descargar los cambios a eclipse.
  */
 public class MainSieteYMedio {
 
@@ -39,7 +36,7 @@ public class MainSieteYMedio {
 		
 		/*
 		 * Creamos los objetos Jugador
-		 * El primero ser'a la banca y es con el que se crea la baraja, el resto de jugadores copian el objeto,
+		 * El primero será la banca y es con el que se crea la baraja, el resto de jugadores copian el objeto,
 		 * de esta manera la baraja es la misma para todos. (se realiza asi por las reglas de la practica de crear solo objetos jugador en el Main)
 		 */
 		for (i = 0; i < nJugadores; i++) {

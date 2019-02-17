@@ -1,17 +1,23 @@
 
+/**
+ * @author Makarov
+ * Esta es la clase principal del juego, por detras de la clase Main, ya que es donde se crean todos los métodos que se podrán utilizar
+ * durante el juego.
+ */
 public class Jugador {
 
 	private int TAM = 14; //el numero de cartas que un jugador puede tener como maximo
 	private Carta [] cartas = new Carta[TAM];
 	private double puntos; //los puntos que un jugador tiene acomulados
 	private boolean estado = true; //guarda el estado de un jugador, eliminado o activo.
-	public static Baraja baraja;
+	private static Baraja baraja; // Se crea un objeto estatico de baraja ua que ésta será la misma para todos los jugadores.
 	
 	
 	
 	
 	/**
-	 * Metodo constructor sin parametros
+	 * Metodo constructor Jugador sin parametros.
+	 * En futuras versiones podría añadirse el parámetro de nombre del jugador.
 	 */
 	public Jugador () {
 		this.puntos = 0;
@@ -20,20 +26,11 @@ public class Jugador {
 	
 	
 	/**
-	 * metodo con el que se crea una baraja nueva, se utilizar� solo con el primer jugador (la banca)
+	 * Método con el que se crea una baraja nueva, se utilizará solo con el primer jugador (la banca)
 	 * El resto de jugadores utilizaran la misma baraja que obtendran con el metodo setBaraja
 	 */
 	public void newBaraja() {
 		this.baraja = new Baraja();
-	}
-	
-	public Baraja getBaraja() {
-		return this.baraja;
-	}
-	
-	
-	public void setBaraja(Baraja baraja) {
-		this.baraja = baraja;
 	}
 	
 	/**
@@ -56,7 +53,6 @@ public class Jugador {
 	/*
 	 * Metodos get y set necesarios de los parametros
 	 */
-	
 	public void setEstado () {
 		this.estado = false;
 	}
@@ -73,6 +69,13 @@ public class Jugador {
 		return this.cartas;
 	}
 	
-
+	public Baraja getBaraja() {
+		return this.baraja;
+	}
+	
+	
+	public void setBaraja(Baraja baraja) {
+		this.baraja = baraja;
+	}
 	
 }
