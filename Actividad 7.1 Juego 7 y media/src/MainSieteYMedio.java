@@ -5,6 +5,9 @@ import java.util.Scanner;
  * Clase principal del juego 7 y medio. En esta clase se crearan unicamente los objetos de la clase jugador.
  * 
  */
+/*
+ * Prueba
+ */
 public class MainSieteYMedio {
 
 	public static void main(String[] args) {
