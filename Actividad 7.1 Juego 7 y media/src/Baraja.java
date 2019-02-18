@@ -4,9 +4,7 @@
  *Esta es una clase con la que crearemos la baraja española de 40 cartas.
  *La baraja se creará desordenada.
  */
-/*
-comentario de prueba
-*/
+
 public class Baraja {
 
 	private Carta [] cartas = new Carta[40];
