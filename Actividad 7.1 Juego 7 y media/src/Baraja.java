@@ -5,6 +5,10 @@
  *La baraja se creará desordenada.
  */
 
+/*
+ * Comentario de prueba
+ */
+
 public class Baraja {
 
 	private Carta [] cartas = new Carta[40];
