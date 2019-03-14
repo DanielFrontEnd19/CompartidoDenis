@@ -52,6 +52,7 @@ public class Carta {
 		return this.palo;
 	}
 	
+	//holamundo
 	
 	
 	/**
