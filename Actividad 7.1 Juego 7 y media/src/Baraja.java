@@ -16,7 +16,7 @@ public class Baraja {
 	private Palo palos [] = Palo.values();
 	private int sigCarta = 0; //se guarda la posición de la siguiente carta a repartir
 	
-	
+	//Prueba de sonido: 1, 2, 3, 4...
 	
 	/**
 	 * Metodo constructor de baraja sin parametros
